@@ -82,7 +82,7 @@ heatmap = cv2.resize(heatmap, (orig.shape[1], orig.shape[0]))
 (heatmap, output) = cam.overlay_heatmap(heatmap, orig, alpha=0.5)
 # display the original image and resulting heatmap and output image
 # to our screen
-output = np.vstack([orig, heatmap, output])
+output = np.hstack([orig, heatmap, output])
 output = imutils.resize(output, height=700)
 cv2.imshow("Output", output)
 cv2.waitKey(0)
