@@ -3,18 +3,20 @@ Tensorflow 2.0 CAM (Class Activation Maps) - Visualization for CNN models using 
 #
 
 
-Params:
+# Params:
 
--i   Path to Image
--m   Path to h5 model file
--s   Input Size of the model ie: 299, 224, 160 
+  - -i   Path to Image
+
+  - -m   Path to h5 model file
+
+  - -s   Input Size of the model ie: 299, 224, 160 
 
 
-Execution Example:
+# Example:
 
 python gradcam.py -m model.h5 -i picture.jpg -s 299
 
 
-Results in :
+# Result:
 
 ![CNN CAM](example.png)
